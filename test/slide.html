@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>幻灯片效果</title>
+	<style>
+		.slide{
+			width: 200px;
+			height: 100px;
+			background-color: lightskyblue;
+			position: relative;
+		}
+		.pointer{
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			line-height: 10px;
+		}
+		.pointer i{
+			width: 10px;
+			height: 10px;
+			display: inline-block;
+			border-radius: 10px;
+			background-color: #000;
+			margin-left: 5px;
+		}
+		.pointer .current{
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+<div class="slide">
+	<!-- 图片省略 -->
+	<!-- 以下是指示器 -->
+	<div class="pointer">
+		<i class="current"></i><i></i><i></i>
+	</div>
+</div>
+</body>
+</html>

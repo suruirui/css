@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两列布局</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.parent{
+			width: 810px;
+			margin: 0 auto;
+			text-align: center;
+			color: #fff;
+		}
+		/*侧栏*/
+		.side{
+			width: 200px;
+			float: left;
+			background-color: red;
+		}
+		/*主栏*/
+		.main{
+			width: 600px;
+			float: right;
+			background-color: skyblue;
+		}
+		/*清除浮动*/
+		.clearfix:after{
+			content: ".";
+			display: block; 
+			clear: both; /*left | right 清除浮动的条件： 后续元素+块级元素*/
+			height: 0;
+			overflow: hidden;
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+<div class="parent clearfix"> 
+	    <div class="side">侧栏</div>
+	    <div class="main">主栏</div>
+</div>
+</body>
+</html>
